@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//注意图形列数大于行数的情况
+
 public class Main
 {
 	public static void main(String[] args)
