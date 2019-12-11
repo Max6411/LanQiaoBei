@@ -6,7 +6,6 @@ public class Main
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();
 		int m = in.nextInt();
-		char ch = 'A';
 		for(int i=0 ; i<n ; ++i)
 		{
 			for(int j=0 ; j<m ; ++j)
