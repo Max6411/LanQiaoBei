@@ -8,8 +8,8 @@ public class Main
 		int n = in.nextInt();
 		for(int i=10000 ; i < 1000000 ; ++i)
 		{
-			StringBuffer string = new StringBuffer(Integer.toString(i));
-			if(!string.toString().equals(string.reverse().toString()))//StringBuffer类中有reverse方法但没有重写equeals方法
+			String string = Integer.toString(i);
+			if(!string.equals(new StringBuffer(string).reverse().toString()))//StringBuffer类中有reverse方法但没有重写equeals方法
 				continue;
 			
 			int total = 0;
