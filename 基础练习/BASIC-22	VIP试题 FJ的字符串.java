@@ -6,16 +6,18 @@ public class Main
 	{
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();
-		in.close();
-		
 		String string = "A";
-		int replace = 0;//当前字符串中需要单独换掉的字符
-		while(--n > 0)
+		for(int i=0 ; i<n-1 ; ++i)
 		{
-			for(int i=replace ; i>0 ; --i)
-				string = string.replace((char)('A'+i), (char)('A'+i+1));
-			string = string.replace("A", "ABA");
-			++replace;
+			String s = "";
+			for(char ch : string.toCharArray())
+			{
+				if(ch == 'A')
+					s += "ABA";
+				else
+					s += (char)(ch+1);
+			}
+			string = s;
 		}
 		System.out.print(string);
 	}
