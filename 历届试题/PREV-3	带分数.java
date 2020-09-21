@@ -10,7 +10,6 @@ public class Main
 	{
 		Scanner in = new Scanner(System.in);
 		num = in.nextInt();
-		in.close();
 		map = new int[11];
 		visited = new boolean[12];
 		DFS(0);
